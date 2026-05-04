@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Canada PR Eligibility Checker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <h2>Check Your Canada PR Eligibility</h2>
+  <p class="subtext">Get a quick estimate based on your profile</p>
+
+  <div class="form-group">
+    <label>Age</label>
+    <select id="age">
+      <option value="">Select Age</option>
+      <option value="high">18-30</option>
+      <option value="medium">31-40</option>
+      <option value="low">41+</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>Education Level</label>
+    <select id="education">
+      <option value="">Select Education</option>
+      <option value="high">Master’s / PhD</option>
+      <option value="medium">Bachelor’s</option>
+      <option value="low">Diploma / Others</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>English Score (IELTS)</label>
+    <select id="english">
+      <option value="">Select Score</option>
+      <option value="high">7.5+</option>
+      <option value="medium">6.0 - 7.5</option>
+      <option value="low">Below 6</option>
+    </select>
+  </div>
+
+  <button onclick="calculate()">Calculate Eligibility</button>
+
+  <div id="result"></div>
+
+  <p class="note">*This is a basic estimate, not official immigration advice.</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
